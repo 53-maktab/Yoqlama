@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informatika to'garagi: yo'qlama</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="doska" id="app">
+  <header>
+    <h1>Informatika to'garagi</h1>
+    <div class="clock"><b id="time">--:--</b><span id="date"></span></div>
+  </header>
+  <div id="content" aria-live="polite"></div>
+  <footer>
+    <button class="btn" id="termsBtn">To'garak shartlari</button>
+    <span class="muted" id="status"></span>
+  </footer>
+</main>
+<div id="overlay" class="overlay hidden" role="dialog" aria-modal="true"></div>
+<div id="toast" class="toast hidden" role="status"></div>
+
+<script src="js/config.js"></script>
+<script src="vendor/supabase.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/terms.js"></script>
+<script src="js/api.js"></script>
+<script src="js/doska.js"></script>
+</body>
+</html>
